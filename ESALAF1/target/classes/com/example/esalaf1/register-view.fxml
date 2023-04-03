@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf1.RegisterController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="173.0" style="-fx-background-color: LAVENDER;">
+            <children>
+                <Label alignment="TOP_LEFT" layoutX="22.0" layoutY="298.0" opacity="0.94" prefHeight="17.0" prefWidth="154.0" style="-fx-background-color: pistachio;" text="Welcome To Esalaf !" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" layoutX="22.0" layoutY="255.0" opacity="0.94" prefHeight="31.0" prefWidth="48.0" style="-fx-background-color: beige;" text="+212 " textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="177.0" fitWidth="227.0" layoutX="8.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image></ImageView>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="500.0" prefWidth="516.0" style="-fx-background-color: #52496f;">
+            <children>
+                <Label alignment="TOP_LEFT" layoutX="28.0" layoutY="109.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: #52496f;" text="  user name :" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="162.0" layoutY="112.0" promptText="full name ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+                <Label alignment="TOP_LEFT" layoutX="28.0" layoutY="192.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: #52496f;" text=" password :" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <Button fx:id="RegisterButton" cache="true" cacheHint="SCALE" depthTest="DISABLE" layoutX="123.0" layoutY="290.0" mnemonicParsing="false" onAction="#RegisterButton" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: lavender;" text="Register " />
+                <Label fx:id="MessageLabel" layoutX="78.0" layoutY="72.0" prefHeight="17.0" prefWidth="189.0" />
+                <PasswordField fx:id="password" layoutX="162.0" layoutY="195.0" promptText="password">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></PasswordField>
+            <Label alignment="TOP_LEFT" layoutX="24.0" layoutY="31.0" opacity="0.94" prefHeight="41.0" prefWidth="365.0" style="-fx-background-color: #52496f;" text="Formulaire d'inscription :" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="151.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: #52496f;" text="E-mail :" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Dubai Regular" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="162.0" layoutY="154.0" promptText="email">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <Label alignment="TOP_LEFT" layoutX="7.0" layoutY="236.0" opacity="0.94" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #52496f;" text="confirm password :  " textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Dubai Regular" size="17.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password1" layoutX="162.0" layoutY="239.0" promptText="password" />
+            <Label layoutX="161.0" layoutY="72.0" />
+            <Button fx:id="RegisterButton1" cache="true" cacheHint="SCALE" depthTest="DISABLE" layoutX="13.0" layoutY="337.0" mnemonicParsing="false" onAction="#Seconnecter" prefHeight="25.0" prefWidth="319.0" style="-fx-background-color: #52496f;" text="Vous avez deja un compte ? se connecter " textAlignment="CENTER" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

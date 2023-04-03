@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="1722.0" stylesheets="@dashboardCSS.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf1.DashboardController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="162.0" style="-fx-background-color: LAVENDER;">
+         <children>
+            <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="52.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo3.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="client" layoutX="3.0" layoutY="216.0" mnemonicParsing="false" onAction="#ClientButton" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: LAVENDER;" styleClass="Button" stylesheets="@dashboardCSS.css" text="Clients " textFill="#52496f">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="credits" layoutY="177.0" mnemonicParsing="false" onAction="#CreditButton" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: LAVENDER;" styleClass="Button" stylesheets="@dashboardCSS.css" text="   Credits " textFill="#52496f">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="produits" layoutY="136.0" mnemonicParsing="false" onAction="#ProduitsButton" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: LAVENDER;" styleClass="Button" stylesheets="@dashboardCSS.css" text="   Produits" textFill="#52496f">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font></Button>
+            <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="52.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@profile.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="52.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cashback.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="52.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@product.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="7.0" layoutY="78.0" prefHeight="1.0" prefWidth="205.0" style="-fx-background-color: #52496f;" />
+            <Button fx:id="deconnexion" layoutX="3.0" layoutY="256.0" mnemonicParsing="false" onAction="#deconnected" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: LAVENDER;" styleClass="Button" stylesheets="@dashboardCSS.css" text="          Déconnexion" textFill="#52496f">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="52.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="produits1" layoutX="6.0" layoutY="98.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: LAVENDER;" styleClass="Button" stylesheets="@dashboardCSS.css" text="     Dashboard " textFill="#52496f">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="52.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-dashboard-layout-24.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="114.0" layoutY="41.0" prefHeight="17.0" prefWidth="43.0" text="Esalaf">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="516.0" prefWidth="1577.0" style="-fx-background-color: #52496f;">
+         <children>
+            <Separator layoutX="4.0" layoutY="71.0" prefHeight="17.0" prefWidth="893.0" style="-fx-background-color: #52496f;" />
+            <Label layoutX="24.0" layoutY="24.0" prefHeight="40.0" prefWidth="345.0" text="Simple Business Management !" textFill="LAVENDER">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+               </font>
+            </Label>
+            <BarChart fx:id="statistic1" layoutX="197.0" layoutY="88.0" prefHeight="400.0" prefWidth="458.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" tickLabelFill="#e0ddf8" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" tickLabelFill="#e0ddf8" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

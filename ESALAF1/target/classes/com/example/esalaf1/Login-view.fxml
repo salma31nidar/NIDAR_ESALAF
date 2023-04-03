@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf1.LoginController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="258.0" style="-fx-background-color: LAVENDER;">
+            <children>
+                <Label alignment="TOP_LEFT" layoutX="22.0" layoutY="298.0" opacity="0.94" prefHeight="17.0" prefWidth="154.0" style="-fx-background-color: pistachio;" text="Welcome To Esalaf !" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" layoutX="22.0" layoutY="255.0" opacity="0.94" prefHeight="31.0" prefWidth="48.0" style="-fx-background-color: beige;" text="+212 " textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="177.0" fitWidth="227.0" layoutX="8.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image></ImageView>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="494.0" style="-fx-background-color: #52496f;">
+            <children>
+                <Label alignment="TOP_LEFT" layoutX="48.0" layoutY="181.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: lavender;" text="  user name :" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="169.0" layoutY="184.0" promptText="full name " />
+                <Label alignment="TOP_LEFT" layoutX="48.0" layoutY="230.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: lavender;" text=" password :" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <Button fx:id="loginButton" cache="true" cacheHint="SCALE" depthTest="DISABLE" layoutX="130.0" layoutY="276.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: lavender;" text="login" />
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="112.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@PRFL.png" />
+                    </image></ImageView>
+                <Label fx:id="MessageLabel" layoutX="58.0" layoutY="142.0" prefHeight="31.0" prefWidth="308.0" textAlignment="CENTER" textFill="#e60b0b">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <PasswordField fx:id="password" layoutX="169.0" layoutY="233.0" />
+            <Button fx:id="inscrireButton" cache="true" cacheHint="SCALE" depthTest="DISABLE" layoutX="25.0" layoutY="327.0" mnemonicParsing="false" onAction="#inscrire" prefHeight="25.0" prefWidth="299.0" style="-fx-background-color: #52496f;" text="veuillez vous inscrire ?" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

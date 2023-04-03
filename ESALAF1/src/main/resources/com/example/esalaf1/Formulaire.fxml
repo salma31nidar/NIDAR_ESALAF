@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf1.FormulaireController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="173.0" style="-fx-background-color: LAVENDER;">
+            <children>
+                <ImageView fitHeight="177.0" fitWidth="227.0" layoutX="8.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logo.png" />
+                    </image></ImageView>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="692.0" prefWidth="709.0" style="-fx-background-color: #52496f;">
+            <children>
+                <Label alignment="TOP_LEFT" layoutX="35.0" layoutY="85.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: #52496f;" text="  Nom Client :" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="fullname" layoutX="43.0" layoutY="116.0" promptText="full name ">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></TextField>
+                <Label alignment="TOP_LEFT" layoutX="44.0" layoutY="264.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: #52496f;" text="Total Credit :" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <Button fx:id="RegisterButton" cache="true" cacheHint="SCALE" depthTest="DISABLE" layoutX="79.0" layoutY="58.0" mnemonicParsing="false" onAction="#AjouterButton" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: lavender;" text="Ajouter " />
+                <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" opacity="0.94" prefHeight="41.0" prefWidth="252.0" style="-fx-background-color: #52496f;" text="Formulaire d'Ajout :" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" layoutX="44.0" layoutY="202.0" opacity="0.94" prefHeight="17.0" prefWidth="103.0" style="-fx-background-color: #52496f;" text="Nom Produit :" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nom_produit" layoutX="43.0" layoutY="233.0" promptText="nom produit">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </TextField>
+                <Label alignment="TOP_LEFT" layoutX="47.0" layoutY="327.0" opacity="0.94" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #52496f;" text="Montant Restant :" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="message" layoutX="199.0" layoutY="116.0" prefHeight="25.0" prefWidth="165.0" />
+            <Button fx:id="RegisterButton1" cache="true" cacheHint="SCALE" depthTest="DISABLE" layoutX="198.0" layoutY="59.0" mnemonicParsing="false" onAction="#RetourButton" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: lavender;" text="Retour" />
+            <Label layoutX="227.0" layoutY="81.0" />
+            <TextField fx:id="total_credit" layoutX="43.0" layoutY="295.0" promptText="total">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="montant_restant" layoutX="43.0" layoutY="359.0" promptText="restant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="telephone" layoutX="43.0" layoutY="174.0" promptText="telephone">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <Label alignment="TOP_LEFT" layoutX="44.0" layoutY="143.0" opacity="0.94" prefHeight="0.0" prefWidth="103.0" style="-fx-background-color: #52496f;" text="Telephone" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Dubai Regular" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="282.0" layoutY="120.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
